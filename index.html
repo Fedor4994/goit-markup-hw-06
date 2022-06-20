@@ -392,64 +392,88 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="left-footer-container">
-          <a class="logo link footer-logo" href="" lang="en"
-            >Web<span class="logo-light">Studio</span></a
-          >
-          <!-- CONTACT INFORMATION -->
-          <address>
-            <ul class="contact-list list contact-list-container">
-              <li class="contact-list-item">
-                <a
-                  class="contact-list-link link"
-                  href="https://goo.gl/maps/3Ua1nt9tnKoBDeo96"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="contact-footer-container">
+          <div class="left-footer-container">
+            <a class="logo link footer-logo" href="" lang="en"
+              >Web<span class="logo-light">Studio</span></a
+            >
+            <!-- CONTACT INFORMATION -->
+            <address>
+              <ul class="contact-list list contact-list-container">
+                <li class="contact-list-item">
+                  <a
+                    class="contact-list-link link"
+                    href="https://goo.gl/maps/3Ua1nt9tnKoBDeo96"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="contact-list-item">
+                  <a class="footer-email link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-list-item">
+                  <a class="footer-phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="right-footer-container">
+            <p class="right-footer-text">присоединяйтесь</p>
+            <ul class="social-info-list list">
+              <li class="social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact-list-item">
-                <a class="footer-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact-list-item">
-                <a class="footer-phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <div class="right-footer-container">
-          <p class="right-footer-text">присоединяйтесь</p>
-          <ul class="social-info-list list">
-            <li class="social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
+        <div class="subscribe-footer-container">
+          <form class="subscribe-footer-form">
+            <p class="subscribe-footer-text">Подпишитесь на рассылку</p>
+            <input
+              type="email"
+              class="subscribe-footer-form-input"
+              name="footer-user-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-footer-button">
+              <div class="subscribe-footer-button-container">
+                <span class="subscribe-footer-button-text">Подписаться</span>
+                <svg class="subscribe-footer-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -461,6 +485,55 @@
             <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <form class="contact-form">
+          <b class="contact-form-text">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Имя</span>
+            <span class="contact-form-wrapper">
+              <input type="text" class="contact-form-input" name="user-name" />
+              <svg class="contact-form-icon">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Телефон</span>
+            <span class="contact-form-wrapper">
+              <input type="tel" class="contact-form-input" name="user-phone-number" />
+              <svg class="contact-form-icon">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Почта</span>
+            <span class="contact-form-wrapper">
+              <input type="email" class="contact-form-input" name="user-email" />
+              <svg class="contact-form-icon">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-message-field">
+            <span class="contact-form-field-key">Комментарий</span>
+            <textarea
+              class="contact-form-message"
+              placeholder="Введите текст"
+              name="user-message"
+            ></textarea>
+          </label>
+          <input
+            type="checkbox"
+            class="contact-form-checkbox visually-hidden"
+            id="checkbox-policy"
+            name="policy"
+          />
+          <label class="checkbox-policy-text" for="checkbox-policy"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href=""> Условия договора</a></label
+          >
+          <button type="submit" class="contact-form-button">Отправить</button>
+        </form>
       </div>
     </div>
 
