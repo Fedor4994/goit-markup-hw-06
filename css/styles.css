@@ -925,6 +925,7 @@ body {
 }
 
 .contact-form-message {
+  display: block;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -983,6 +984,7 @@ body {
 .checkbox-policy-text {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 14px;
